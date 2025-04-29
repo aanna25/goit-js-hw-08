@@ -93,11 +93,11 @@ if (event.target.nodeName !== "IMG") {
     return;
   }
 
-  const largeImage = event.target.dataset.source;
+  const originalImage = event.target.dataset.source;
   const description = event.target.alt;
 
   const instance = basicLightbox.create(
-    `<img src="${largeImage}" alt="${description}">`
+    `<img src="${originalImage}" alt="${description}">`
   );
   instance.show();
 });
