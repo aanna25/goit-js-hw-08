@@ -71,7 +71,7 @@ const markup = images
     image => `
       <li class="gallery-item">
         <a class="gallery-link" href="${image.original}">
-          <img width="340"
+          <img 
             class="gallery-image"
             src="${image.preview}"
             data-source="${image.original}"
