@@ -71,7 +71,7 @@ const markup = images
     image => `
       <li class="gallery-item">
         <a class="gallery-link" href="${image.original}">
-          <img width="320"
+          <img width="340"
             class="gallery-image"
             src="${image.preview}"
             data-source="${image.original}"
@@ -82,6 +82,7 @@ const markup = images
     `
   )
     .join("");
+
   
 gallery.insertAdjacentHTML("beforeend", markup);
 
